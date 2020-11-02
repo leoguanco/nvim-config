@@ -7,10 +7,6 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Icons
     Plug 'ryanoasis/vim-devicons'
-
-    " Airline
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
     
     " Typing
     Plug 'alvan/vim-closetag'
@@ -46,4 +42,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Themes
     Plug 'sainnhe/gruvbox-material'
+
+    " Airline
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()

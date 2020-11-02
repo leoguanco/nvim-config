@@ -1,6 +1,7 @@
 " General
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/general/keys.vim
+source $HOME/.config/nvim/general/terminal.vim
 source $HOME/.config/nvim/nvim-plug/plugins.vim
 
 " Configs
@@ -17,5 +18,6 @@ source $HOME/.config/nvim/configs/vim-closetag.vim
 source $HOME/.config/nvim/configs/vim-commentary.vim
 
 " Themes
+source $HOME/.config/nvim/general/colors.vim
 source $HOME/.config/nvim/themes/gruvbox-material.vim
 source $HOME/.config/nvim/themes/vim-airline.vim
