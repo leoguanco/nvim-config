@@ -17,6 +17,9 @@ map <Leader>l :tabnext<cr>
 " buffers
 map <Leader>ob :Buffers<cr>
 
+" Close current buffer
+nnoremap <C-b> :bd<CR>
+
 " faster scrolling
 nnoremap <silent> <C-e> 10<C-e>
 nnoremap <silent> <C-y> 10<C-y>
