@@ -42,6 +42,8 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Themes
     Plug 'sainnhe/gruvbox-material'
+    Plug 'morhetz/gruvbox'
+
 
     " Airline
     Plug 'vim-airline/vim-airline'
