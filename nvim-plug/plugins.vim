@@ -44,6 +44,8 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'sainnhe/gruvbox-material'
     Plug 'morhetz/gruvbox'
 
+    " coc
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     " Airline
     Plug 'vim-airline/vim-airline'
