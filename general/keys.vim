@@ -14,6 +14,10 @@ nnoremap <Leader>q :q<CR>
 map <Leader>h :tabprevious<cr>
 map <Leader>l :tabnext<cr>
 
+" buffers navigation
+nnoremap <TAB> :bnext<cr>
+nnoremap <S-TAB> :bprevious<cr>
+
 " buffers
 map <Leader>ob :Buffers<cr>
 

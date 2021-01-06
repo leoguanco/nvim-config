@@ -18,6 +18,9 @@ highlight Normal ctermbg=NONE
 set laststatus=2
 set noshowmode
 
+set foldmethod=syntax
+set foldlevelstart=99
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
