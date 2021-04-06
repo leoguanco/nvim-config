@@ -42,3 +42,6 @@ set updatetime=300
 
 let g:python3_host_prog = '/usr/bin/python3'
 let g:python_host_prog = '/usr/bin/python2.7'
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
