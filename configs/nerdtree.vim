@@ -9,6 +9,15 @@ let NERDTreeMapOpenInTab='\t'
 let NERDTreeIgnore=['\.git$']
 let g:javascript_plugin_flow = 1
 
-map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>p :Files<CR>
 map <Leader>ag :Ag<CR>
+map <Leader>nt :call NERDTreeToggleInCurDir()<CR>
+
+function! NERDTreeToggleInCurDir()
+  " If NERDTree is open in the current buffer
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+    exe ":NERDTreeClose"
+  else
+    exe ":NERDTreeFind"
+  endif
+endfunction
