@@ -10,7 +10,6 @@ source $HOME/.config/nvim/configs/emmet-vim.vim
 source $HOME/.config/nvim/configs/fzf.vim
 source $HOME/.config/nvim/configs/indentLine.vim
 source $HOME/.config/nvim/configs/nerdtree.vim
-source $HOME/.config/nvim/configs/kite.vim
 source $HOME/.config/nvim/configs/coc.vim
 " source $HOME/.config/nvim/configs/nvim-lsp.vim
 source $HOME/.config/nvim/configs/signify.vim
