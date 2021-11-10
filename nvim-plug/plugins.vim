@@ -26,9 +26,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'tpope/vim-fugitive'
     Plug 'stsewd/fzf-checkout.vim'
 
-    " Todo Task
-    Plug 'vuciv/vim-bujo'
-
     " telescope requirements...
     Plug 'nvim-lua/popup.nvim'
     Plug 'nvim-lua/plenary.nvim'
@@ -37,6 +34,8 @@ call plug#begin('~/.config/nvim/plugged')
     " Themes
     Plug 'sainnhe/gruvbox-material'
     Plug 'morhetz/gruvbox'
+    Plug 'sainnhe/sonokai'
+    Plug 'sainnhe/everforest'
 
     " coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -46,4 +45,11 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'vim-airline/vim-airline-themes'
 
     Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+    Plug 'projekt0n/github-nvim-theme'
+
+    Plug 'tomlion/vim-solidity'
+
+    Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+
 call plug#end()

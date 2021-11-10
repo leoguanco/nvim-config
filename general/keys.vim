@@ -11,12 +11,12 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
 " tabs navigation
-map <Leader>h :tabprevious<cr>
-map <Leader>l :tabnext<cr>
+map <Leader>h :tabprevious<cr>\|:AirlineRefresh<CR>
+map <Leader>l :tabnext<cr>\|:AirlineRefresh<CR>
 
 " buffers navigation
-nnoremap <TAB> :bnext<cr>
-nnoremap <S-TAB> :bprevious<cr>
+nnoremap <TAB> :bnext<cr>\|:AirlineRefresh<CR>
+nnoremap <S-TAB> :bprevious<cr>\|:AirlineRefresh<CR>
 
 " buffers
 map <Leader>ob :Buffers<cr>
@@ -25,8 +25,10 @@ map <Leader>ob :Buffers<cr>
 nnoremap <C-b> :bd<CR>
 
 " faster scrolling
-nnoremap <silent> <C-e> 10<C-e>
-nnoremap <silent> <C-y> 10<C-y>
+nnoremap <silent> <C-e> 10<C-e><cr>\|:AirlineRefresh<CR>
+
+nnoremap <silent> <C-y> 10<C-y><cr>\|:AirlineRefresh<CR>
+
 nmap <Leader>s <Plug>(easymotion-s2)
 
 nnoremap <Leader>G :G<cr>
@@ -44,10 +46,11 @@ xnoremap K :move '<-2<CR>gv-gv
 xnoremap J :move '>+1<CR>gv-gv
 
 " Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h\|:AirlineRefresh<CR>
+nnoremap <C-j> <C-w>j\|:AirlineRefresh<CR>
+nnoremap <C-k> <C-w>k\|:AirlineRefresh<CR>
+nnoremap <C-l> <C-w>l\|:AirlineRefresh<CR>
+
 
 " Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)

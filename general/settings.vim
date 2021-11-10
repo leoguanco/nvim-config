@@ -15,7 +15,7 @@ filetype indent on
 filetype plugin on
 
 highlight Normal ctermbg=NONE
-set laststatus=2
+" set laststatus=2
 set noshowmode
 
 set foldmethod=syntax

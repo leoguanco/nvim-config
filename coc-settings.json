@@ -10,7 +10,9 @@
     "yaml",
     "json",
     "typescript",
-    "python"
+    "python",
+    "typescriptreact",
+    "php"
   ],
   "pyright.enable": true,
   "python.analysis.autoImportCompletions": true,
