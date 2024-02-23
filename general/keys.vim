@@ -72,3 +72,7 @@ function! s:check_back_space() abort
 endfunction
 
 nmap <Leader>py <Plug>(Prettier)
+
+nnoremap <silent> <C-f> :Files<CR>
+nnoremap <silent> <C-p> :Files<CR>
+nnoremap <silent> <Leader>gh :Git blame<CR>

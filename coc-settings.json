@@ -1,19 +1,4 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "sass",
-    "scss",
-    "markdown",
-    "javascript",
-    "graphql",
-    "html",
-    "yaml",
-    "json",
-    "typescript",
-    "python",
-    "typescriptreact",
-    "php"
-  ],
   "pyright.enable": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.autoSearchPaths": true,

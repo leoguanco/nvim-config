@@ -15,10 +15,10 @@ nnoremap <leader>m :Marks<CR>
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color
-let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.9, 'height': 0.9,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+let g:fzf_layout = {'up':'~80%', 'window': { 'width': 0.9, 'height': 0.9,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline'
-let $FZF_DEFAULT_COMMAND="rg --files --hidden -g '!{node_modules/*,.git/*}'"
+let $FZF_DEFAULT_COMMAND="rg --files --hidden -g '!{node_modules/*,.git/*, .idea/*, .vscode/*, __pycache__/*, .pytest_cache/*}'"
 
 
 " Customize fzf colors to match your color scheme
@@ -62,5 +62,3 @@ command! -nargs=* -bang RG call RipgrepFzf(<q-args>, <bang>0)
 " Git grep
 command! -bang -nargs=* GGrep
   \ call fzf#vim#grep(
-  \   'git grep --line-number '.shellescape(<q-args>), 0,
-  \   fzf#vim#with_preview({'dir': systemlist('git rev-parse --show-toplevel')[0]}), <bang>0)
